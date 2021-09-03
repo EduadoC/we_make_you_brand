@@ -1,0 +1,77 @@
+body {
+    background-color: #D7D7D7;
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.conteiner1 {
+    background-image: url(/fotos/bkg.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 1000px;
+}
+/* here i styled the nav_bar*/
+.nav_list * {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+.nav_list a {
+    padding: 40px;
+}
+.nav_list p {
+    color: #FF9500;
+}
+.nav_bar {
+    text-align: center;
+    padding-top: 3% ;
+}
+#logo1 {
+    width: 15%;
+}
+/*from here starts the text from the first page*/
+.motto {
+    text-align: center;
+    font-size: 100px;
+    padding-top: 9%;
+}
+#p_motto1 {
+    margin: 0%;
+    padding-right: 20%;
+    font-weight: bold;
+}
+#p_motto2 {
+    margin: 0%;
+    padding-left: 20%;
+    color: #FF9500;
+    font-size: 120%;
+    font-weight: 900;
+}
+/*now we start fo style the second part of the page*/
+.conteiner2 {
+    border:1px solid black
+}
+.conteiner2 h1 {
+    text-align: center;
+    font-size: 4vw;
+}
+.conteiner2 h1 p {
+    color: #E09224;
+    margin: 0%;
+}
+.tile1 * { 
+    display: inline;   
+}
+#text_tile1{
+    max-width: 30%;
+}
+#tile1 {
+    width: 20%;
+    border-radius: 8px;
+    box-shadow: 5px 5px 8px gray;
+}
+#title_tile1 {
+    
+}
