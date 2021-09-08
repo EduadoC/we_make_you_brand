@@ -42,7 +42,7 @@ body {
 }
 /*style the services list*/
 .services {
-    background-image: url(/fotos/bkg_services.jpg);
+    background-image: url(fotos/bkg_services.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     margin-top: 3%;

@@ -5,7 +5,7 @@ body {
 }
 
 .conteiner1 {
-    background-image: url(/fotos/bkg.jpg);
+    background-image: url(fotos/bkg.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     width: 100%;
