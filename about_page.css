@@ -1,0 +1,187 @@
+html, body { height: 100% }
+body {
+    background-color: #120c0e; /* For browsers that do not support gradients */
+    background-image: linear-gradient(120deg, rgba(85, 84, 84, 0.541), rgba(18, 12, 14, 0.96),rgba(18, 12, 14, 0.6629));
+    margin: 0%;
+    background-repeat: no-repeat;
+}
+.nav_list * {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+.nav_list a {
+    padding: 40px;
+}
+#motto {
+    color: #FF9500;
+}
+.nav_bar {
+    text-align: center;
+    padding-top: 3% ;
+}
+#logo1 {
+    width: 15%;
+}
+.nav_list *:hover {
+    text-decoration: underline;
+}
+/*styleing the "about_us_text"*/
+.about_us_text {
+    width: 50%;
+    margin: auto;
+    font-size: 2.5vh;
+    color: rgb(253, 253, 253);
+    line-height: 40px;
+    text-align: center;
+    margin-top: 50px;
+}
+.about_us_text h1 {
+    color: rgba(255, 255, 255, 0.466);
+}
+#foto_about_us {
+    width: 100%;
+    margin-top: 50px;
+    height: 80%;
+    object-fit:cover;
+}
+/*styleing the CEO and Founder part*/
+.ceo_founder {
+    padding-left: 10%;
+}
+.founder {
+    float: right;
+    width: 50%;
+}
+.text_founder {
+    width: 30%;
+    font-size: 1.2vw;
+    color: rgb(214, 214, 214);
+    float: right;
+    margin-right: 24%;
+    margin-top: 10%;
+}
+#foto_founder {
+    border-radius: 50%;
+    width: 25%;
+    margin:10%;  
+    margin-bottom: 0%; 
+}
+.founder p {
+    color:white;
+    width: 30%;
+    text-align: center;
+    margin-left: 8%;
+    font-size: 1.1vw;
+}
+
+
+.ceo{
+    width: 50%;
+}
+.text_ceo{
+    width: 30%;
+    font-size: 1.2vw;
+    color: rgb(214, 214, 214);
+    float: right;
+    margin-right: 24%;
+    margin-top: 10%;
+}
+#foto_CEO {
+    border-radius: 50%;
+    width: 25%;
+    margin:10%;  
+    margin-bottom: 0%;  
+}
+.ceo p {
+    color:white;
+    width: 30%;
+    text-align: center;
+    margin-left: 8%;
+    font-size: 1.1vw;
+}
+/* styling the footer */
+footer {
+    padding: 3%;
+    background-color: #120C0E;
+    display: flex;
+    color: rgb(214, 214, 214);
+    border-top: 1px solid #FF9500;
+}
+/*i will start with "happy clients" section*/
+.happy_clients {
+    text-align: center;
+}
+/*i will start with "happy clients" section*/
+.social-media img {
+    width: 15%;
+    padding: 20px;
+}
+.social-media {
+    margin: auto;
+    text-align: center;
+}
+.social-media h2 {
+    padding-bottom: 15%;
+}
+/*i will start with "contact_box" section*/
+.contact-box {
+    width: 500px;
+}
+.contact-box *{
+    display: block;
+}
+.contact-box h2 {
+    text-align: center;
+}
+#input_email, #input_message {
+    font-size: 1.1vw;
+    width: 100%;
+    padding: 5px;
+    margin: 30px;
+    margin-left: 0%;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    border: none;
+}
+#input_message {
+    height: 200px;
+}
+#submit_btn {
+    width: 50%;
+    margin:auto;
+    font-size:1.1vw;
+    color: #E09224;
+    background-color: #3D3938;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+#submit_btn:hover {
+    width: 55%;
+    font-size: 150%;
+}
+@media only screen and (max-width: 1520px) {
+    footer {
+       display:block; 
+       border-top: 1px solid #FF9500;
+    }
+    .contact-box {
+        margin:auto
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .ceo p, .founder p {
+        font-size: 1.5vw;
+        width: 40%;
+        margin-left: 5%;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .ceo p, .founder p {
+        font-size: 2vw;
+        width: 60%;
+        margin-left: 0%;
+    }
+}

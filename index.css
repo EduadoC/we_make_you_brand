@@ -21,7 +21,7 @@ body {
 .nav_list a {
     padding: 40px;
 }
-.nav_list p {
+#motto {
     color: #FF9500;
 }
 .nav_bar {
@@ -30,6 +30,9 @@ body {
 }
 #logo1 {
     width: 15%;
+}
+.nav_list *:hover {
+    text-decoration: underline;
 }
 /*from here starts the text from the first page*/
 .motto {
@@ -50,28 +53,160 @@ body {
     font-weight: 900;
 }
 /*now we start fo style the second part of the page*/
-.conteiner2 {
-    border:1px solid black
-}
 .conteiner2 h1 {
     text-align: center;
     font-size: 4vw;
+    margin-bottom: 5%;
 }
 .conteiner2 h1 p {
     color: #E09224;
     margin: 0%;
 }
-.tile1 * { 
-    display: inline;   
+/*from here we style the first tile and text*/
+.tile1 {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
 }
-#text_tile1{
-    max-width: 30%;
+#foto_tile1 {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    margin-right: 15px;
 }
-#tile1 {
-    width: 20%;
-    border-radius: 8px;
-    box-shadow: 5px 5px 8px gray;
+.text_tile1 {
+    width: 35%;  
+    display: inline-block;
+    text-align:left ;
+    position: relative;
+    top: -25px;
+    line-height: 25px;
+    margin-left: 15px;
+    font-weight:bolder;
 }
 #title_tile1 {
-    
+    width: fit-content; 
 }
+
+/*from here we style the second tile and text*/
+.tile2 {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#foto_tile2 {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    margin-right: 15px;
+}
+.text_tile2 {
+    width: 35%;  
+    display: inline-block;
+    text-align:left ;
+    position: relative;
+    top: -25px;
+    line-height: 25px;
+    margin-left: 15px;
+    font-weight:bolder;
+}
+#title_tile2 {
+    width: fit-content; 
+}
+/*from here we style the third tile and text*/
+.tile3 {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+}
+#foto_tile3 {
+    width: 30%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px gray;
+    margin-right: 15px;
+}
+.text_tile3 {
+    width: 35%;  
+    display: inline-block;
+    text-align:left ;
+    position: relative;
+    top: -25px;
+    line-height: 25px;
+    margin-left: 15px;
+    font-weight:bolder;
+}
+#title_tile3 {
+    width: fit-content; 
+}
+/*Now i started styleing the footer*/
+footer {
+    padding: 3%;
+    background-color: #C4C4C4;
+    display: flex;
+}
+/*i will start with "happy clients" section*/
+.happy_clients {
+    text-align: center;
+}
+/*i will start with "happy clients" section*/
+.social-media img {
+    width: 15%;
+    padding: 20px;
+}
+.social-media {
+    margin: auto;
+    text-align: center;
+}
+.social-media h2 {
+    padding-bottom: 15%;
+}
+/*i will start with "contact_box" section*/
+.contact-box {
+    width: 500px;
+}
+.contact-box *{
+    display: block;
+}
+.contact-box h2 {
+    text-align: center;
+}
+#input_email, #input_message {
+    font-size: 1.1vw;
+    width: 100%;
+    padding: 5px;
+    margin: 30px;
+    margin-left: 0%;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    border: none;
+}
+#input_message {
+    height: 200px;
+}
+#submit_btn {
+    width: 50%;
+    margin:auto;
+    font-size:1.1vw;
+    color: #E09224;
+    background-color: #3D3938;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+#submit_btn:hover {
+    width: 55%;
+    font-size: 150%;
+}
+@media only screen and (max-width: 1520px) {
+    footer {
+       display:block; 
+       border-top: 1px solid #FF9500;
+    }
+    .contact-box {
+        margin:auto
+    }
+}
+    

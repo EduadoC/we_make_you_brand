@@ -1,0 +1,154 @@
+body {
+    background-color: #CCCCCC;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(120deg, rgba(64, 64, 64, 1), rgba(204, 204, 204, 0));
+    margin: 0%;
+}
+.nav_list * {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+.nav_list a {
+    padding: 40px;
+}
+#motto {
+    color: #FF9500;
+}
+.nav_bar {
+    text-align: center;
+    padding-top: 3% ;
+}
+#logo1 {
+    width: 15%;
+}
+/*style welcome text div*/
+.welcome_text {
+    width: 50%;
+    margin: auto;
+    color: white;
+    font-size: 1.3vw;
+    background: -webkit-linear-gradient(250deg, #FF9500, #CCCCCC);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 5%;
+}
+.welcome_text h1 {
+    text-align: center;
+    margin-bottom: 5%;
+}
+/*style the services list*/
+.services {
+    background-image: url(/fotos/bkg_services.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 3%;
+}
+.services_listR {   
+    float: right;
+    width: 50%;
+    padding-top: 20px;
+}
+.services_listL {
+    width: 50%;   
+}
+.icon_service {
+    width: 8%;
+    height: 8%;
+    padding: 1%;
+}
+.service {
+    display: flex;
+    width:80% ;
+    margin: auto;
+}
+.serviceM {
+    display: flex;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+}
+.service_text {
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+.service_listM {
+    margin-top: 25px;
+}
+.service_textM {
+    font-size: 1.1vw;
+    font-weight: 600;
+}
+/*Now i started styleing the footer*/
+footer {
+    padding: 3%;
+    background-color: #C4C4C4;
+    display: flex;
+    border-top: 1px solid #FF9500;
+}
+/*i will start with "happy clients" section*/
+.happy_clients {
+    text-align: center;
+}
+/*i will start with "happy clients" section*/
+.social-media img {
+    width: 15%;
+    padding: 20px;
+}
+.social-media {
+    margin: auto;
+    text-align: center;
+}
+.social-media h2 {
+    padding-bottom: 15%;
+}
+/*i will start with "contact_box" section*/
+.contact-box {
+    width: 500px;
+}
+.contact-box *{
+    display: block;
+}
+.contact-box h2 {
+    text-align: center;
+}
+#input_email, #input_message {
+    font-size: 1.1vw;
+    width: 100%;
+    padding: 5px;
+    margin: 30px;
+    margin-left: 0%;
+    box-shadow: 5px 5px 5px grey;
+    border-radius: 3px;
+    background-color: #FFFFFF;
+    border: none;
+}
+#input_message {
+    height: 200px;
+}
+#submit_btn {
+    width: 50%;
+    margin:auto;
+    font-size:1.1vw;
+    color: #E09224;
+    background-color: #3D3938;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px grey;
+}
+#submit_btn:hover {
+    width: 55%;
+    font-size: 150%;
+}
+@media only screen and (max-width: 1520px) {
+    footer {
+       display:block; 
+       border-top: 1px solid #FF9500;
+    }
+    .contact-box {
+        margin:auto
+    }
+}

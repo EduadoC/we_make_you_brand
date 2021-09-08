@@ -1,0 +1,157 @@
+body {
+    background-color: #120c0e; /* For browsers that do not support gradients */
+    background-image: linear-gradient(120deg, rgba(85, 84, 84, 0.541), rgba(18, 12, 14, 0.96),rgba(18, 12, 14, 0.6629));
+    margin: 0%;
+    background-repeat: no-repeat;
+}
+/* here i styled the nav_bar*/
+.nav_list * {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+}
+.nav_list a {
+    padding: 40px;
+}
+#motto {
+    color:#FF9500;
+}
+.nav_bar {
+    text-align: center;
+    padding-top: 3% ;
+}
+#logo1 {
+    width: 15%;
+}
+.nav_list *:hover {
+    text-decoration: underline;
+}
+/*start designing the first part of the page*/
+#title_page {
+    color: rgba(255, 255, 255, 0.37);
+    text-align: center;
+    margin-top: 10%;
+}
+/*start desigining the Email form*/
+.email_form {
+    background-color: rgba(18, 12, 14, 1);
+    width: 40%;
+    margin: auto;
+    border-radius: 30px;
+    box-shadow: 5px 5px 5px gray;
+    color: rgba(253, 253, 253, 0.74);
+    font-size: 1.3vw;
+}
+.email_form div {
+    text-align: center;
+    padding: 20px;
+}
+#email_form_title {
+    text-align: center;
+    padding-top: 30px;
+}
+.email_form input, textarea {
+    width: 80%;
+    padding: 10px;
+    box-shadow: 2px 2px 5px gray;
+    border: none;
+}
+#submit_btn {
+    width: 60%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+    color: #FF9500;
+    font-size: 1.2vw;
+    box-shadow: 2px 2px 5px gray;
+    background-color: #3D3938;
+}
+/*stop desigining the Email form*/
+.banner * {
+    box-sizing: border-box;
+}
+.banner {
+    position: relative;
+    text-align: center;
+    margin-top: 50px;
+}
+.foto_frame img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+.bg-text {
+    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    border:3px solid #f1f1f1;
+    z-index: 2;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+/*design Media Links*/
+#medial_links_title {
+    color: rgba(255, 255, 255, 0.445);
+    text-align: center;
+    margin: 0%;
+    margin-top: 50px;
+}
+.media_links {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    padding: 30px;
+    position: relative;
+    padding-top: 0%;
+}
+.row img {
+    width: 100%;
+}
+.row {
+    text-align: center;
+    padding: 40%;
+    text-align: center;
+}
+.column_logo {
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.column_logo img {
+    width: 80%;
+}
+.column {
+    margin: auto;
+}
+/*style google maps*/
+.google_maps {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.445);
+    margin-bottom: 30px;
+}
+#google_maps {
+    border-radius: 20px;
+    box-shadow: 5px 5px 5px gray;
+}
+footer {
+    text-align: center;
+    background-color: #030303;
+    color: #727272;
+}
+footer p {
+    margin: 0%;
+    padding: 10px;
+}
