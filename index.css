@@ -1,21 +1,27 @@
 body {
     background-color: #D7D7D7;
+    background-size: cover;
     margin: 0%;
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
-
 .conteiner1 {
     background-image: url(fotos/bkg.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     width: 100%;
-    height: 1000px;
 }
 /* here i styled the nav_bar*/
+#menu_icon {
+    display: none;
+}
+.dropdown-content{
+    display: none;
+}
 .nav_list * {
     display: inline-block;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2vw;
     color: white;
 }
 .nav_list a {
@@ -37,13 +43,15 @@ body {
 /*from here starts the text from the first page*/
 .motto {
     text-align: center;
-    font-size: 100px;
-    padding-top: 9%;
+    font-size: 8vw;
+    padding-top: 3%;
+    padding-bottom: 5%;
 }
 #p_motto1 {
     margin: 0%;
     padding-right: 20%;
     font-weight: bold;
+    text-shadow: -1px -1px 0 #FF9500, 1px -1px 0 #FF9500, -1px 1px 0 #FF9500, 1px 1px 0 #FF9500;
 }
 #p_motto2 {
     margin: 0%;
@@ -51,6 +59,7 @@ body {
     color: #FF9500;
     font-size: 120%;
     font-weight: 900;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 /*now we start fo style the second part of the page*/
 .conteiner2 h1 {
@@ -64,26 +73,26 @@ body {
 }
 /*from here we style the first tile and text*/
 .tile1 {
-    width: 60%;
+    width: 65vw;
     margin: auto;
     text-align: center;
     margin-bottom: 50px;
 }
 #foto_tile1 {
-    width: 30%;
+    width: 320px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
     margin-right: 15px;
 }
 .text_tile1 {
-    width: 35%;  
+    width: 20vw;  
     display: inline-block;
     text-align:left ;
     position: relative;
-    top: -25px;
     line-height: 25px;
     margin-left: 15px;
     font-weight:bolder;
+    font-size: 0.9vw;
 }
 #title_tile1 {
     width: fit-content; 
@@ -91,52 +100,53 @@ body {
 
 /*from here we style the second tile and text*/
 .tile2 {
-    width: 60%;
+    width: 65vw;
     margin: auto;
     text-align: center;
     margin-bottom: 50px;
 }
 #foto_tile2 {
-    width: 30%;
+    width: 320px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
     margin-right: 15px;
 }
 .text_tile2 {
-    width: 35%;  
+    width: 20vw;  
     display: inline-block;
     text-align:left ;
     position: relative;
-    top: -25px;
     line-height: 25px;
-    margin-left: 15px;
+    margin-right: 20px;
     font-weight:bolder;
+    font-size: 0.9vw;
 }
 #title_tile2 {
     width: fit-content; 
 }
 /*from here we style the third tile and text*/
 .tile3 {
-    width: 60%;
+    width: 65vw;
     margin: auto;
     text-align: center;
     margin-bottom: 50px;
 }
 #foto_tile3 {
-    width: 30%;
+    width: 320px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px gray;
     margin-right: 15px;
 }
 .text_tile3 {
-    width: 35%;  
+    width: 20vw;  
     display: inline-block;
     text-align:left ;
     position: relative;
-    top: -25px;
+    top: -15px;
     line-height: 25px;
     margin-left: 15px;
     font-weight:bolder;
+    font-size: 0.9vw;
 }
 #title_tile3 {
     width: fit-content; 
@@ -207,6 +217,90 @@ footer {
     }
     .contact-box {
         margin:auto
+    }
+    .text_tile3, .text_tile2, .text_tile1 {
+        display: block;
+        position: initial;
+        margin: auto;
+        font-size: 120%;
+        width: 60%;
+        text-align: center;
+    }
+    .tile2 {
+        display: flex ;
+        flex-flow: column ;
+    }
+    #foto_tile2 {
+        order: 1;
+        margin: auto;
+    }
+    .text_tile2 {order: 2;}
+    #title_tile3, #title_tile2, #title_tile1 {
+        margin: auto;
+        margin-bottom: 20px;
+        
+    }
+}
+@media only screen and (max-width: 768px) {
+    .nav_bar {
+        display: none; 
+    }
+    #menu_icon {
+        display: block;
+        width: 6%;
+        float: right;
+        margin: 5%;
+        margin-left: 0%;
+    }
+    .dropdown {
+        border: 1px solid white;
+        width: 100%;
+    }
+    #logo1 {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 2%;
+        width: 20%;
+    }
+    .dropdown-content a {
+        display: block;
+    }
+    .dropdown-content {
+        float: right;
+        margin-top: 5%;
+    }
+    .dropdown-content a{
+        font-size: 2vw;
+        text-decoration: none;
+        background-color: #f9f9f9;
+        width: 17vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .conteiner2 h1 {
+        font-size: 8vw;
+    }
+    #logo1 {
+        padding-bottom: 5%;
+    }
+    .text_tile3, .text_tile2, .text_tile1 {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .tile1, .tile2, .tile3 {
+        width: 100%;
+    }
+    .contact-box {
+        width: 80%;
+        margin:auto;
+    }
+    .social-media {
+        width: 100%;
     }
 }
     
