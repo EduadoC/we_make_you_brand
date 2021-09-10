@@ -1,18 +1,23 @@
+html {
+    height: 100%;
+}
 body {
     background-color: #D7D7D7;
     background-size: cover;
     margin: 0%;
     font-family: 'Roboto', sans-serif;
     width: 100%;
+    height: 100%;
 }
 .conteiner1 {
     background-image: url(fotos/bkg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
+    height: 100%;
 }
 /* here i styled the nav_bar*/
-#menu_icon {
+#menu_icon, #logo_drp {
     display: none;
 }
 .dropdown-content{
@@ -44,8 +49,8 @@ body {
 .motto {
     text-align: center;
     font-size: 8vw;
-    padding-top: 3%;
     padding-bottom: 5%;
+    padding-top: 5%;
 }
 #p_motto1 {
     margin: 0%;
@@ -253,7 +258,6 @@ footer {
         margin-left: 0%;
     }
     .dropdown {
-        border: 1px solid white;
         width: 100%;
     }
     #logo1 {
@@ -284,11 +288,27 @@ footer {
     .conteiner2 h1 {
         font-size: 8vw;
     }
-    #logo1 {
-        padding-bottom: 5%;
+    #logo_drp {
+        display: block;
+        padding-top: 5%;
+        width: 15%;
+        margin: auto;
     }
     .text_tile3, .text_tile2, .text_tile1 {
         width: 100%;
+    }
+    #input_email, #input_message {
+        font-size: 110%;
+    }
+    .motto {
+        padding-top: 0%;
+        font-size: 11vw;
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    #p_motto2 {
+        padding-left: 10%;
     }
 }
 @media only screen and (max-width: 550px) {
@@ -302,5 +322,6 @@ footer {
     .social-media {
         width: 100%;
     }
+
 }
     
