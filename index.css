@@ -203,17 +203,21 @@ footer {
     height: 200px;
 }
 #submit_btn {
-    width: 50%;
+    width: 70%;
     margin:auto;
-    font-size:1.1vw;
+    font-size:40px;
     color: #E09224;
     background-color: #3D3938;
     border-radius: 10px;
     box-shadow: 5px 5px 5px grey;
+    position: relative;
 }
 #submit_btn:hover {
-    width: 55%;
-    font-size: 150%;
+    width: 71%;
+    font-size: 45px;
+}
+#copyright {
+    text-align: center;
 }
 @media only screen and (max-width: 1520px) {
     footer {
@@ -246,36 +250,39 @@ footer {
         
     }
 }
+@media only screen and (max-width: 350px) {
+    #menu_icon {
+        margin-right: 0% !important;
+    }
+}
 @media only screen and (max-width: 768px) {
     .nav_bar {
         display: none; 
     }
     #menu_icon {
         display: block;
-        width: 6%;
+        width: 7%;
         float: right;
-        margin: 5%;
+        margin: 8%;
         margin-left: 0%;
+        position: absolute;
+        right: 0%;
+        min-width: 70px;
     }
     .dropdown {
         width: 100%;
-    }
-    #logo1 {
-        position: relative;
-        left: 50%;
-        transform: translateX(-50%);
-        margin-top: 2%;
-        width: 20%;
     }
     .dropdown-content a {
         display: block;
     }
     .dropdown-content {
-        float: right;
         margin-top: 5%;
+        position: absolute;
+        right: 0%;
+        margin-top: 17%;
     }
     .dropdown-content a{
-        font-size: 2vw;
+        font-size: 4vw;
         text-decoration: none;
         background-color: #f9f9f9;
         width: 17vw;
@@ -291,7 +298,8 @@ footer {
     #logo_drp {
         display: block;
         padding-top: 5%;
-        width: 15%;
+        width: 20%;
+        min-width: 150px;
         margin: auto;
     }
     .text_tile3, .text_tile2, .text_tile1 {
