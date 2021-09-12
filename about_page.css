@@ -1,4 +1,4 @@
-html, body { height: 100% }
+html, body { height: 100%; width: 100%; }
 body {
     background-color: #120c0e; /* For browsers that do not support gradients */
     background-image: linear-gradient(120deg, rgba(85, 84, 84, 0.541), rgba(18, 12, 14, 0.96),rgba(18, 12, 14, 0.6629));
@@ -8,13 +8,13 @@ body {
 .nav_list * {
     display: inline-block;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2vw;
     color: white;
 }
 .nav_list a {
     padding: 40px;
 }
-#motto {
+#about_page {
     color: #FF9500;
 }
 .nav_bar {
@@ -26,6 +26,12 @@ body {
 }
 .nav_list *:hover {
     text-decoration: underline;
+}
+#menu_icon, #logo_drp {
+    display: none;
+}
+.dropdown-content{
+    display: none;
 }
 /*styleing the "about_us_text"*/
 .about_us_text {
@@ -56,7 +62,7 @@ body {
 }
 .text_founder {
     width: 30%;
-    font-size: 1.2vw;
+    font-size: 130%;
     color: rgb(214, 214, 214);
     float: right;
     margin-right: 24%;
@@ -73,16 +79,14 @@ body {
     width: 30%;
     text-align: center;
     margin-left: 8%;
-    font-size: 1.1vw;
+    font-size: 130%;
 }
-
-
 .ceo{
     width: 50%;
 }
 .text_ceo{
     width: 30%;
-    font-size: 1.2vw;
+    font-size: 130%;
     color: rgb(214, 214, 214);
     float: right;
     margin-right: 24%;
@@ -99,19 +103,21 @@ body {
     width: 30%;
     text-align: center;
     margin-left: 8%;
-    font-size: 1.1vw;
+    font-size: 130%;
 }
 /* styling the footer */
 footer {
-    padding: 3%;
     background-color: #120C0E;
     display: flex;
     color: rgb(214, 214, 214);
     border-top: 1px solid #FF9500;
+    width: 100%;
+    margin-top: 50px;
 }
 /*i will start with "happy clients" section*/
 .happy_clients {
     text-align: center;
+    width: 33.3%;
 }
 /*i will start with "happy clients" section*/
 .social-media img {
@@ -119,15 +125,15 @@ footer {
     padding: 20px;
 }
 .social-media {
-    margin: auto;
     text-align: center;
+    width: 33.3%;
 }
 .social-media h2 {
     padding-bottom: 15%;
 }
 /*i will start with "contact_box" section*/
 .contact-box {
-    width: 500px;
+    width: 27%;
 }
 .contact-box *{
     display: block;
@@ -135,53 +141,132 @@ footer {
 .contact-box h2 {
     text-align: center;
 }
-#input_email, #input_message {
-    font-size: 1.1vw;
+.form-group input,
+.form-group textarea {
     width: 100%;
-    padding: 5px;
-    margin: 30px;
-    margin-left: 0%;
-    box-shadow: 5px 5px 5px grey;
-    border-radius: 3px;
-    background-color: #FFFFFF;
+    padding: 10px;
+    box-shadow: 2px 2px 5px gray;
     border: none;
-}
-#input_message {
-    height: 200px;
+    font-size: 100%;
+    resize: vertical;
 }
 #submit_btn {
-    width: 50%;
-    margin:auto;
-    font-size:1.1vw;
-    color: #E09224;
-    background-color: #3D3938;
+    margin-top: 20px;
+    width: 80%;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px grey;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+    color: #FF9500;
+    font-size: 120%;
+    box-shadow: 2px 2px 5px gray;
+    background-color: #3D3938;
 }
 #submit_btn:hover {
-    width: 55%;
-    font-size: 150%;
+    background-color: #686362 ;
 }
-@media only screen and (max-width: 1520px) {
-    footer {
-       display:block; 
-       border-top: 1px solid #FF9500;
-    }
-    .contact-box {
-        margin:auto
-    }
+#copyright {
+    text-align: center;
+    color: white;
+    background-color: #383536;
 }
-@media only screen and (max-width: 1440px) {
-    .ceo p, .founder p {
-        font-size: 1.5vw;
-        width: 40%;
-        margin-left: 5%;
+
+@media only screen and (max-width: 768px) {
+    .nav_bar {
+        display: none;
     }
+    .nav_bar {
+        display: none; 
+    }
+    #menu_icon {
+        display: block;
+        width: 7%;
+        float: right;
+        margin: 8%;
+        margin-left: 0%;
+        position: absolute;
+        right: 0%;
+        min-width: 70px;
+    }
+    .dropdown {
+        width: 100%;
+    }
+    .dropdown-content {
+        position:absolute;
+        right: 0%;
+        margin-top:120px;
+    }
+    .dropdown-content a{
+        display: block;
+        font-size: 4vw;
+        text-decoration: none;
+        background-color: #f9f9f9;
+        width: 17vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    #logo_drp {
+        display: block;
+        padding-top: 5%;
+        width: 20%;
+        min-width: 150px;
+        margin: auto;
+    }
+    .about_us_text {
+        width: 80%;
+    }
+    #foto_founder, #foto_CEO {
+        width: 30%;
+    }
+    .founder, .ceo {
+        width: 100%;
+    }
+    .ceo_founder {
+        padding-left: 0%;
+    }
+    .founder p, .ceo p {
+        margin: 0%;
+        padding-left: 50px;
+    }   
 }
 @media only screen and (max-width: 1024px) {
-    .ceo p, .founder p {
-        font-size: 2vw;
-        width: 60%;
-        margin-left: 0%;
+    .founder, .ceo {
+        float: none;
+        margin: auto;
+    }
+    .founder p, .ceo p {
+        width: 80%;
+        padding-top: 30px;
+        text-align: left;
+        padding-right: 20px;
+    }
+    .text_founder, .text_ceo {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 1252px) {
+    footer {
+        display:block; 
+    }
+    .contact-box, .happy_clients, .social-media {
+        margin:auto;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 550px) {
+    .contact-box {
+        width: 80%;
+    }
+    .social-media {
+        width: 100%;
+    }
+    .dropdown-content {
+        margin-top:110px;
     }
 }

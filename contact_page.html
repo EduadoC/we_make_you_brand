@@ -7,37 +7,58 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="email_form.js"></script>
     </head>
     <body>
         <nav class="nav_bar">
             <div class="nav_list">
-                <a href="about_page.html">About</a>
-                <a href="#">Projects</a>
-                <a href="index.html" id="motto">We make you brand</a>
-                <a href="services.html">Services</a>
-                <a href="contact_page.html">Contact</a>
+                <a id="about_page" href="about_page.html">About</a>
+                <a id="projects_page" href="projects_page.html">Projects</a>
+                <a id="motto" href="index.html">We make you brand</a>
+                <a id="services_page" href="services.html">Services</a>
+                <a id="contact_page" href="contact_page.html">Contact</a>
             </div>
             <img id="logo1" src="fotos/logo.png" alt="Logo">
+        </nav>
+        <nav class="dropdown">
+            <img id="menu_icon" src="fotos/menu_icon.png" alt="Menu Icon">
+            <div class="dropdown-content">
+                <a id="about_page" href="about_page.html">About</a>
+                <a id="projects_page" href="projects_page.html">Projects</a>
+                <a id="motto" href="index.html">Home</a>
+                <a id="services_page" href="index.html">Services</a>
+                <a id="contact_page" href="contact_page.html">Contact</a>
+            </div>
+            <img id="logo_drp" src="fotos/logo.png" alt="Logo">
         </nav>
 
         <h1 id="title_page">We are there for you, whenever you need the most!</h1>
         
-        <div class="email_form">
+        <form id="my-form" class="email_form" enctype="multipart/form-data" action="https://formspree.io/f/xwkayejl" method="POST">
             <h2 id="email_form_title">Send us an E-mail</h2>
-            <div class="name_input">
-                <label for="Name">Your name:</label><br>
-                <input type="text" placeholder="Jhon Smith">
-            </div>
-            <div class="email_input">
-                <label for="Email">Your E-mail Adress:</label><br>
-                <input type="email" placeholder="jhon_smith2021@yahoo.com">
-            </div>
-            <div class="message_input">
-                <label for="Message">Your Message</label><br>
-                <textarea type="text" placeholder="Ask us something."></textarea>
-            </div>
+
+            <div class="form-group">
+                <label for="firstName"> First Name</label>
+                <input type="text" id="firstName" name="firstName">
+              </div>
+        
+              <div class="form-group">
+                <label for="latsName">Last Name</label>
+                <input type="text" id="lastName" name="lastName">
+              </div>
+        
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+              </div>
+        
+              <div class="form-group">
+                <label for="massage">Massage</label>
+                <textarea name="massage" id="massage"></textarea>
+              </div>
             <button id="submit_btn" type="submit">Send!</button>
-        </div>
+        </form>
+        <div id="status"></div>
 
         <div class="banner">
             <div class="foto_frame">
@@ -72,7 +93,7 @@
 
         <div class="google_maps">
             <h2>-Pay us a visit-</h2>
-            <iframe id="google_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d665.0277355959312!2d72.82771445493421!3d19.45707697701691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a96f5e70ce39%3A0x99196843844c740b!2sWe%20Make%20You%20Brand!5e0!3m2!1sen!2sde!4v1631001523986!5m2!1sen!2sde" width="30%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe id="google_maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d665.0277355959312!2d72.82771445493421!3d19.45707697701691!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7a96f5e70ce39%3A0x99196843844c740b!2sWe%20Make%20You%20Brand!5e0!3m2!1sen!2sde!4v1631001523986!5m2!1sen!2sde" allowfullscreen="" loading="lazy"></iframe>
         </div>
         <footer>
             <p>Site by EduardoWD ©Copyright 2019. All Rights Reserved</p>

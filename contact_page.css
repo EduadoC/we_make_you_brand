@@ -5,16 +5,22 @@ body {
     background-repeat: no-repeat;
 }
 /* here i styled the nav_bar*/
+#menu_icon, #logo_drp {
+    display: none;
+}
+.dropdown-content{
+    display: none;
+}
 .nav_list * {
     display: inline-block;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 2vw;
     color: white;
 }
 .nav_list a {
     padding: 40px;
 }
-#motto {
+#contact_page {
     color:#FF9500;
 }
 .nav_bar {
@@ -30,44 +36,80 @@ body {
 /*start designing the first part of the page*/
 #title_page {
     color: rgba(255, 255, 255, 0.37);
+    margin: auto;
     text-align: center;
     margin-top: 10%;
+    width: 80%;
 }
 /*start desigining the Email form*/
 .email_form {
     background-color: rgba(18, 12, 14, 1);
-    width: 40%;
+    width: 50%;
     margin: auto;
     border-radius: 30px;
     box-shadow: 5px 5px 5px gray;
     color: rgba(253, 253, 253, 0.74);
-    font-size: 1.3vw;
+    font-size: 130%;
+    padding: 20px;
 }
 .email_form div {
-    text-align: center;
     padding: 20px;
 }
 #email_form_title {
     text-align: center;
     padding-top: 30px;
 }
-.email_form input, textarea {
-    width: 80%;
+.form-group input,
+.form-group textarea {
+    width: 100%;
     padding: 10px;
     box-shadow: 2px 2px 5px gray;
     border: none;
+    font-size: 100%;
+    resize: vertical;
 }
 #submit_btn {
-    width: 60%;
+    width: 80%;
     padding: 10px;
     border-radius: 10px;
     margin-left: 50%;
     transform: translateX(-50%);
     margin-bottom: 30px;
     color: #FF9500;
-    font-size: 1.2vw;
+    font-size: 120%;
     box-shadow: 2px 2px 5px gray;
     background-color: #3D3938;
+}
+#status{
+    font-size: 25px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;   
+}
+#status.success {
+    background-color: rgba(191, 255, 95, 0.164);
+    animation: status 4s ease forwards;
+}
+#status.error {
+    background-color: rgba(255, 44, 44, 0.164);
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0%{
+       opacity: 1;
+       pointer-events: all; 
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
 }
 /*stop desigining the Email form*/
 .banner * {
@@ -146,6 +188,13 @@ body {
     border-radius: 20px;
     box-shadow: 5px 5px 5px gray;
 }
+iframe {
+    width: 40%;
+    height: 500px;
+    border: 1px solid black;
+    min-width: 320px;
+
+}
 footer {
     text-align: center;
     background-color: #030303;
@@ -154,4 +203,80 @@ footer {
 footer p {
     margin: 0%;
     padding: 10px;
+}
+@media only screen and (max-width: 1520px) {
+    footer {
+       display:block; 
+       border-top: 1px solid #FF9500;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .nav_bar {
+        display: none; 
+    }
+    #menu_icon {
+        display: block;
+        width: 7%;
+        float: right;
+        margin: 8%;
+        margin-left: 0%;
+        position: absolute;
+        right: 0%;
+        min-width: 70px;
+    }
+    .dropdown {
+        width: 100%;
+    }
+    .dropdown-content a {
+        display: block;
+    }
+    .dropdown-content {
+        position:absolute;
+        right: 0%;
+        margin-top:120px;
+    }
+    .dropdown-content a{
+        font-size: 4vw;
+        text-decoration: none;
+        background-color: #f9f9f9;
+        width: 17vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    #logo_drp {
+        display: block;
+        padding-top: 5%;
+        width: 20%;
+        min-width: 150px;
+        margin: auto;
+    }
+    .email_form {
+        width: 90%;
+    }
+    .column_logo {
+        padding-bottom: 30px;
+    }
+}
+@media only screen and (max-width: 1024px) {
+    .nav_list * {
+        font-size: 2.2vw;
+    }
+    .email_form {
+        width: 80%;
+    }
+    .media_links {
+        width: 80%;
+    }
+    iframe {
+        width: 70%;
+    }
+}
+@media only screen and (max-width: 600px) {
+    iframe {
+        width: 90%;
+        height: 350px;
+    }
 }

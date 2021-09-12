@@ -188,33 +188,30 @@ footer {
 .contact-box h2 {
     text-align: center;
 }
-#input_email, #input_message {
-    font-size: 1.1vw;
+.form-group input,
+.form-group textarea {
     width: 100%;
-    padding: 5px;
-    margin: 30px;
-    margin-left: 0%;
-    box-shadow: 5px 5px 5px grey;
-    border-radius: 3px;
-    background-color: #FFFFFF;
+    padding: 10px;
+    box-shadow: 2px 2px 5px gray;
     border: none;
-}
-#input_message {
-    height: 200px;
+    font-size: 100%;
+    resize: vertical;
 }
 #submit_btn {
-    width: 70%;
-    margin:auto;
-    font-size:40px;
-    color: #E09224;
-    background-color: #3D3938;
+    margin-top: 20px;
+    width: 80%;
+    padding: 10px;
     border-radius: 10px;
-    box-shadow: 5px 5px 5px grey;
-    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+    color: #FF9500;
+    font-size: 120%;
+    box-shadow: 2px 2px 5px gray;
+    background-color: #3D3938;
 }
 #submit_btn:hover {
-    width: 71%;
-    font-size: 45px;
+    background-color: #686362 ;
 }
 #copyright {
     text-align: center;
@@ -247,7 +244,6 @@ footer {
     #title_tile3, #title_tile2, #title_tile1 {
         margin: auto;
         margin-bottom: 20px;
-        
     }
 }
 @media only screen and (max-width: 350px) {

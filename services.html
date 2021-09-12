@@ -7,17 +7,29 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <script src="email_form.js"></script>
     </head>
     <body>
         <nav class="nav_bar">
             <div class="nav_list">
-                <a href="about_page.html">About</a>
-                <a href="#">Projects</a>
-                <a href="index.html" id="motto">We make you brand</a>
-                <a href="services.html">Services</a>
-                <a href="contact_page.html">Contact</a>
+                <a id="about_page" href="about_page.html">About</a>
+                <a id="projects_page" href="projects_page.html">Projects</a>
+                <a id="motto" href="index.html">We make you brand</a>
+                <a id="services_page" href="services.html">Services</a>
+                <a id="contact_page" href="contact_page.html">Contact</a>
             </div>
             <img id="logo1" src="fotos/logo.png" alt="Logo">
+        </nav>
+        <nav class="dropdown">
+            <img id="menu_icon" src="fotos/menu_icon.png" alt="Menu Icon">
+            <div class="dropdown-content">
+                <a id="about_page" href="about_page.html">About</a>
+                <a id="projects_page" href="projects_page.html">Projects</a>
+                <a id="motto" href="index.html">Home</a>
+                <a id="services_page" href="services.html">Services</a>
+                <a id="contact_page" href="contact_page.html">Contact</a>
+            </div>
+            <img id="logo_drp" src="fotos/logo.png" alt="Logo">
         </nav>
         <div class="welcome_text">
             <h1>Have you asked what do we provide for our customers?</h1>
@@ -142,14 +154,13 @@
                 </div>
             </div>
             <div class="service_listM">
-
                 <div class="serviceM">
                     <img class="icon_service" src="fotos/tech.png" alt="Icon">
                     <div class="service_textM">
                         <h2>15. Website and Application Design and Development</h2>
                         <p id="service_textM">"We make you brand" prepare you for the future, your customers spend so musch time in Online nowdays, so you have to move your bussines there. We are prepared for this situation, and we will help you about that. We'll put togheter a Web aplication for your Business so your customers can enjoy your services or producuts from wherever they are. </p>
                     </div>
-                </div>
+            </div>
             </div>
         </div>
         <footer>
@@ -164,7 +175,7 @@
                     <img src="fotos/snapdeal.jpg" alt="snap-deal Logo">
                 </div>
             </div>
-            <div class="social-media" style="width: 500px;">
+            <div class="social-media">
                 <h2>Our Solcial Media</h2>
                 <a href="https://instagram.com/wemakeyoubrand"><img src="fotos/icons/instagram.png" alt="Instagram Logo"></a>
                 <a href="https://twitter.com/wemakeyoubrand"><img src="fotos/icons/twitter.png" alt="Twitter Logo"></a><br>
@@ -172,11 +183,34 @@
                 <a href="wemakeyoubrand@gmail.com"><img src="fotos/icons/gmail.png" alt="Gmail Logo"></a>
             </div>
             <div class="contact-box">
-                <h2>Contact us:</h2>
-                <input id="input_email" type="email" placeholder="Your E-mail Adress:">
-                <textarea id="input_message" type="text" placeholder="Your Message...:"></textarea>
-                <button id="submit_btn" type="submit">Send</button>
-            </div>
+                <div class="contact-box">
+                    <form id="my-form" class="email_form" enctype="multipart/form-data" action="https://formspree.io/f/xwkayejl" method="POST">
+                        <h2 id="email_form_title">Send us an E-mail</h2>
+            
+                        <div class="form-group">
+                            <label for="firstName"> First Name</label>
+                            <input type="text" id="firstName" name="firstName">
+                          </div>
+                    
+                          <div class="form-group">
+                            <label for="latsName">Last Name</label>
+                            <input type="text" id="lastName" name="lastName">
+                          </div>
+                    
+                          <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email">
+                          </div>
+                    
+                          <div class="form-group">
+                            <label for="massage">Massage</label>
+                            <textarea name="massage" id="massage"></textarea>
+                          </div>
+                        <button id="submit_btn" type="submit">Send!</button>
+                    </form>
+                </div>
+                <div id="status"></div>
         </footer>
+        <p id="copyright">Site by EduardoWD © Copyright 2019. All Rights Reserved</p>
     </body>
 </html>
