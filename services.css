@@ -152,6 +152,37 @@ footer {
     background-color: #383536;
     margin: 0%;
 }
+#status{
+    font-size: 25px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;   
+}
+#status.success {
+    background-color: rgba(191, 255, 95, 0.164);
+    animation: status 4s ease forwards;
+}
+#status.error {
+    background-color: rgba(255, 44, 44, 0.164);
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0%{
+       opacity: 1;
+       pointer-events: all; 
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
 @media only screen and (max-width: 1520px) {
     footer {
        display:block; 

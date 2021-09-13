@@ -4,6 +4,7 @@ body {
     background-image: linear-gradient(120deg, rgba(64, 64, 64, 1), rgba(204, 204, 204, 0));
     margin: 0%;
 }
+/*navbar style*/
 #menu_icon, #logo_drp {
     display: none;
 }
@@ -28,4 +29,250 @@ body {
 }
 #logo1 {
     width: 15%;
+}
+/*vabber style*/
+.banner * {
+    box-sizing: border-box;
+}
+.banner {
+    position: relative;
+    text-align: center;
+    margin-top: 100px;
+}
+.foto_frame img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    filter: blur(4px);
+    -webkit-filter: blur(4px);
+}
+.bg-text {
+    background-color: rgb(0,0,0);
+    background-color: rgb(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    border:3px solid #f1f1f1;
+    z-index: 2;
+    width: 60%;
+    padding: 20px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%)
+}
+/*tex1  style*/
+.text1 {
+    width: 50%;
+    font-size: 27px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*banner2 style*/
+.banner2 {
+    width: 100%;
+    height: 300px;
+    background-image: url(fotos/foto_projects_page.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/*style the on-going projects*/
+.conteiner {
+    width: 80%;
+    font-size: 27px;
+    margin: 0 auto;
+}
+.conteiner p {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.site1 {
+    background-image: url(fotos/site1.png);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.site2 {
+    background-image: url(fotos/seite2.png);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 5%;
+}
+#text_int {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+#title_site1,
+#title_site2 {
+    text-align: center;
+    padding-top: 5%;
+}
+/*Now i started styleing the footer*/
+footer {
+    padding: 3%;
+    background-color: #C4C4C4;
+    display: flex;
+}
+/*i will start with "happy clients" section*/
+.happy_clients {
+    text-align: center;
+    width: 33.3%;
+    margin: 0 auto;
+}
+/*i will start with "happy clients" section*/
+.social-media img {
+    width: 15%;
+    padding: 20px;
+}
+.social-media {
+    margin:0 auto;
+    text-align: center;
+}
+/*i will start with "contact_box" section*/
+.contact-box {
+    width: 500px;
+}
+.contact-box *{
+    display: block;
+}
+.contact-box h2 {
+    text-align: center;
+}
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    box-shadow: 2px 2px 5px gray;
+    border: none;
+    font-size: 100%;
+    resize: vertical;
+}
+#submit_btn {
+    margin-top: 20px;
+    width: 80%;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 30px;
+    color: #FF9500;
+    font-size: 120%;
+    box-shadow: 2px 2px 5px gray;
+    background-color: #3D3938;
+}
+#submit_btn:hover {
+    background-color: #686362 ;
+}
+#copyright {
+    text-align: center;
+}
+#status{
+    font-size: 25px;
+    color: white;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;   
+}
+#status.success {
+    background-color: rgba(191, 255, 95, 0.164);
+    animation: status 4s ease forwards;
+}
+#status.error {
+    background-color: rgba(255, 44, 44, 0.164);
+    animation: status 4s ease forwards;
+}
+@keyframes status {
+    0%{
+       opacity: 1;
+       pointer-events: all; 
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+@media only screen and (max-width: 1520px) {
+    footer {
+       display:block; 
+       border-top: 1px solid #FF9500;
+    }
+    .contact-box {
+        margin:auto
+    }
+    .happy_clients {
+        width: 100%;
+
+    }
+}
+@media only screen and (max-width: 768px) {
+    .contact-box {
+        width: 80%;
+    }
+    .conteiner {
+        font-size: 4vw;
+        text-align: center;
+    }
+    .text1 {
+        width: 95%;
+        font-size: 5vw;
+    }
+    .nav_bar {
+        display: none; 
+    }
+    #menu_icon {
+        display: block;
+        width: 7%;
+        float: right;
+        margin: 8%;
+        margin-left: 0%;
+        position: absolute;
+        right: 0%;
+        min-width: 70px;
+    }
+    .dropdown {
+        width: 100%;
+    }
+    .dropdown-content a {
+        display: block;
+    }
+    .dropdown-content {
+        position:absolute;
+        right: 0%;
+        margin-top:120px;
+        z-index: 2;
+    }
+    .dropdown-content a{
+        font-size: 4vw;
+        text-decoration: none;
+        background-color: #f9f9f9;
+        width: 17vw;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        padding: 12px 16px;
+    }
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    #logo_drp {
+        display: block;
+        padding-top: 5%;
+        width: 20%;
+        min-width: 150px;
+        margin: auto;
+    }
 }
